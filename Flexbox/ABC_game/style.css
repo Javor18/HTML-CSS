@@ -1,0 +1,19 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    max-width: 15vw;
+    height: 35rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+span {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1px;
+}
