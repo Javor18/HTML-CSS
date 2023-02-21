@@ -1,0 +1,80 @@
+header {
+    grid-area: header;
+    display: block;
+    margin-bottom: 5px;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(53, 100, 153);
+    padding: 15px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    gap: 1rem;
+    display: grid;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside aside"
+    "main main"
+    "footer footer";
+}
+
+header, main, aside, footer {
+    padding: 2rem;
+    background-color: rgb(0, 150, 250);
+    border-radius: 0.4rem;
+    color: #000;
+}
+
+aside li {
+    font-size: 20px;
+    list-style: none;
+}
+
+main li {
+    font-size: 20px;
+}
+
+footer {
+    font-size: 20px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    font-size: 15px;
+}
+
+@media (min-width: 500px){
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    }
+
+    nav a {
+    display: block;
+    padding-left: 5px;
+    }
+
+    nav ul {
+        margin-left: 50px;
+    }
+}
